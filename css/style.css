@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Poiret+One&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    font-family: 'Poiret One', cursive;
+    /*font-family: 'Poiret One', cursive;*/
+    background: #40E0D0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+main {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form__team-input {
+    position: relative;
+}
+
+.formstwo__input {
+    width: 100%;
+    color: #000;
+    background-color: aliceblue;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formstwo__input:focus {
+    border: 3px solid #651fff;
+    outline: auto;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.form__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.form__input-error-activo {
+    display: block;
+}
+
+.form__validate-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.form__checkbox {
+    margin-right: 10px;
+}
+
+.form__team-terms,
+.form__message,
+.form__team-btn-enviar {
+    grid-column: span 1;
+}
+
+.form__message {
+    height: 45px;
+    line-height: 45px;
+    background: #ff1744;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.form__message-activo {
+    display: block;
+}
+
+.form__message p {
+    margin: 0;
+}
+
+.form__team-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.form__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 3);
+    background: #651fff;
+} 
+
+.form__menssage-success {
+    font-size: 14px;
+    color: #004d40;
+    display: none;
+}
+
+.form__menssage-success-activo {
+    display: block;
+}
+
+footer {
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Poiret One', cursive;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer__content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .8s ease;
+}
+
+.socials a:hover i{
+    color: #651fff;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+/* ------------ Estilos para validaciones ------------ */
+
+/*
+.form__team-correcto,
+.form__validate-estado {
+    color: #004d40;
+    opacity: 1;
+    display: none;
+}
+
+.form__team-incorrecto,
+.form__label {
+    color: #ff1744;
+}
+
+.form__team-incorrecto,
+.form__validate-estado {
+    color: #ff1744;
+    opacity: 1;
+}
+
+.form__team-incorrecto,
+.formstwo__input {
+    border: 3px solid #ff1744;
+}
+*/
+
+
+
+/* ------------ Media Queries ------------ */
+@media screen and (max-width: 800px) {
+    .form__field-wrapper { 
+        grid-template-columns: 1fr;
+}
+
+.form__team_terms,
+.form__message,
+.form__team-btn-enviar {
+    grid-column: 1;
+}
+.form__btn {
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

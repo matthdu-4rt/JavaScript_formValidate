@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=" https://yarnpkg.com/en/package/normalize.css">
+
+    <!-- Style CSS3 -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>form.js.org</title>
+</head>
+
+<body>
+
+    <main>
+        <form action="" class="form" id="form-id">
+
+             <!-- team username -->
+            <div class="form__team" id="form__users">
+                <label for="users" class="form__label">Username</label>
+                <div class="form__team-input">
+                    <input type="text" class="formstwo__input" name="user" id="user" placeholder=" username ">
+                    <i class="form__validate-estado far fa-times-circle"></i>
+                </div>
+                <p class="form__input-error"> El usuario tiene que ser de 4 a 16 caracteres y solo puede contener numero, letras y guion bajo.</p>
+            </div>
+
+            <!-- team name -->
+            <div class="form__team" id="form__name">
+                <label for="name" class="form__label">Name</label>
+                <div class="form__team-input">
+                    <input type="text" class="formstwo__input" name="name" id="name" placeholder=" Name ">
+                    <i class="form__validate-estado far fa-times-circle"></i>
+                </div>
+                <p class="form__input-error"> El usuario tiene que ser de 4 a 16 caracteres y solo puede contener numero, letras y guion bajo.</p>
+            </div>
+
+            <!-- team password -->
+            <div class="form__team" id="form__password">
+                <label for="password" class="form__label">Password</label>
+                <div class="form__team-input">
+                    <input type="password" class="formstwo__input" name="password" id="password" placeholder=" ******** ">
+                    <i class="form__validate-estado far fa-times-circle"></i>
+                </div>
+                <p class="form__input-error"> La contrasena debe tener de 4 a 12 digitos, 1 mayuscula, 1 numero y 1 simbolo.</p>
+            </div>
+
+              <!-- team password two -->
+              <div class="form__team" id="form__password2">
+                <label for="password2" class="form__label">Repeat Password</label>
+                <div class="form__team-input">
+                    <input type="password" class="formstwo__input" name="password2" id="password2" placeholder=" ********* ">
+                    <i class="form__validate-estado far fa-times-circle"></i>
+                </div>
+                <p class="form__input-error"> Las dos contrasenas deben ser iguales.</p>
+            </div>
+
+            <!-- team email -->
+            <div class="form__team" id="form__email">
+                <label for="email" class="form__label">Email</label>
+                <div class="form__team-input">
+                    <input type="email" class="formstwo__input" name="email" id="email" placeholder=" email@gmail.com ">
+                    <i class="form__validate-estado far fa-times-circle"></i>
+                </div>
+                <p class="form__input-error"> El correo solo puede tener 8 caracteres, letras, numeros, puntos, simbolos y guion bajo.</p>
+            </div>
+
+            <!-- team Cellphone -->
+            <div class="form__team" id="form__phone">
+                <label for="phone" class="form__label">Phone</label>
+                <div class="form__team-input">
+                    <input type="text" class="formstwo__input" name="phone" id="phone" placeholder=" 051 678 45 89 ">
+                    <i class="form__validate-estado far fa-times-circle"></i>
+                </div>
+                <p class="form__input-error"> El telefono solo puede tener numeros y maximo 14 digitos.</p>
+            </div>
+
+            <!-- team Cellphone -->
+            <div class="form__team" id="form__terms">
+                <label class="form__label">
+                    <input type="checkbox" name="terms" id="terms">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+
+            <div class="form__message" id="form__message">
+                <p><i class="fas fa-exclamation-circle"></i> <b>Error:</b> Por favor rellene el formulario correctamente. </p>
+            </div>
+
+            <div class="form__team form__team-btn-enviar">
+                <button type="submit" class="form__btn">Send</button>
+                <p class="form__menssage-success" id="form__message-success">Formulario enviado exitosamente.</p>
+            </div>
+        </form>
+    </main>
+
+    <footer> 
+        <div class="footer__content">
+            <h3>soyhipst</h3>
+            <p class="footer__text">Enthusiastic Back-End and Front-End Developer Jr. Autonomous. <br> 👨‍🚀 Mathematician's heart 🛰 My Life is an Algorithm 👨‍💻 #ComputerScience #SoftwareEngineer OpenSource: JS - PHP - Python HomeOffice:🇵🇪🇲🇽🇬🇧🇳🇱🇺🇸</p>
+            <ul class="socials">
+                <li><a href="#"> <i class="fa fa-facebook"> </i></a></li>
+                <li><a href="#"> <i class="fa fa-twitter"> </i></a></li>
+                <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+                <li><a href="#"> <i class="fa fa-github"> </i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p> copyright <i class="fa fa-copyright"></i>2020 – 2022  SoyHipst. Hecho con <i class="fas fa-heart" color="red"></i> en Colombia. 
+                designed by <span>Matthias Duarte</span> of HipstDeveloper </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a060385ce4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
